@@ -1,0 +1,176 @@
+/* === responsive nav === */
+
+@media (max-width:1024px){
+    #menu-btn{
+        display: block;
+    }
+    nav{
+        height: 8vh;
+    }
+    .nav-items{
+        width: 50%;
+        background-color: aliceblue;
+        position: absolute;
+        top: 8vh;
+        left: -110%;
+        display: block;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .nav-items ul{
+        display: block;
+    }
+    .nav-items ul li{
+        text-align: center;
+        padding: 1rem;
+    }
+    .nav-items .icons{
+        margin-top: 2rem;
+    }
+    .open{
+        left: 0;
+    }
+}
+
+
+
+
+/* Css Responsive Code */
+@media (max-width:1080px){
+
+    .logo{
+        padding-left: 2rem;
+    }
+    #menu-btn{
+        padding-right: 2rem ;
+    }
+
+    #hero .bg-slider-wrapper .bg-slider,
+    #hero .bg-slider-wrapper .bg-slider.middle,
+    #hero .bg-slider-wrapper .bg-slider.last{
+       height: auto;
+       padding: 15rem 0;
+       background-position: center bottom;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+   section,footer{
+       padding-left:2rem;
+       padding-right:2rem;
+   }
+}
+
+
+
+/* For Ipad and Tablets */
+
+@media screen and (max-width:1023px){
+
+    #hero .bg-slider-wrapper .start .left,
+    #hero .bg-slider-wrapper .last .left,
+    #hero .bg-slider-wrapper .middle .right{
+        display: none;
+    }
+    #hero .bg-slider-wrapper .bg-slider .right,
+    #hero .bg-slider-wrapper .bg-slider .left{
+        padding: 0 9rem;
+    }
+    #hero .bg-slider-wrapper .bg-slider{
+        display: block;
+        text-align: center;
+    }
+    button#hero-slider-btn.slider-btn{
+        display: none;
+    }
+
+    section.idea .idea-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.about .about-wrapper{
+        grid-template-columns: 1fr;
+    }
+    section.about .about-wrapper .image-box{
+        text-align: center;
+    }
+    section.about .about-wrapper img{
+        max-width: 65%;
+    }
+    
+    section.about .about-wrapper h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    section.about{
+        padding-bottom: 4rem ;
+    }
+    section.packages .packages-wrapper, section.offer .offer-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .footer-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 3fr;
+    }
+    footer .footer-wrapper .footer-item{
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width:767px){
+    section.idea .idea-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.about .about-wrapper{
+        grid-template-columns: 1fr;
+    }
+    section.about .about-wrapper .image-box{
+        text-align: center;
+    }
+    section.about .about-wrapper img{
+        max-width: 85%;
+    }
+    
+    section.about .about-wrapper h1{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    section.about{
+        padding-bottom: 4rem ;
+    }
+    section.packages .packages-wrapper, section.offer .offer-wrapper{
+        grid-template-columns: 1fr;
+    }
+    footer .footer-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 3fr;
+    }
+    footer .footer-wrapper .footer-item{
+        margin: 2rem 0;
+    }
+    #hero .bg-slider-wrapper .bg-slider,
+    #hero .bg-slider-wrapper .bg-slider.middle,
+    #hero .bg-slider-wrapper .bg-slider.last{
+        padding: 5rem 0;
+    }
+}
+@media screen and (max-width:480px){
+    section.cta p{
+        font-size: 14px;
+    }
+    section.brands .brands-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .footer-wrapper{
+        grid-template-columns: 1fr;
+        grid-row-gap: 3fr;
+    }
+    section.about .about-wrapper h1{
+        font-size: 25px;
+        text-align: left;
+    }
+    section.cta .input button{
+        padding: 0.8rem 1.5rem;
+    }
+    #hero .bg-slider-wrapper .bg-slider .right,
+    #hero .bg-slider-wrapper .bg-slider .left{
+        padding: 0 2rem;
+    }
+}

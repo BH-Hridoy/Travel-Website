@@ -1,0 +1,744 @@
+/* ===== font cdn ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+
+
+/* ===== basic styling ===== */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s linear;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+
+/* ===== Colors ===== */
+:root{
+    --green : #219150;
+    --black : #10221b;
+    --white : #fff;
+    --light-bg : #eee; 
+    --text-black : #10221b;
+}
+
+
+/* ===== Reuseable Component ===== */
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+section{
+    padding: 3rem 0;
+}
+.btn-primary{
+    padding: .6rem 2.3rem;
+    border: 2px solid var(--black);
+    display: inline-block;
+    color: var(--black);
+    font-size: 18px;
+    
+}
+.btn-primary:hover{
+    background: var(--black);
+    color: var(--white);
+}
+.section-heading{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #10221b;   
+}
+/* ===== HEADER SECTION START ===== */
+
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.sticky{
+    background-color: #fff;
+    box-shadow: 0 0 1px 5px rgba(0, 0, 0, 0.11);
+}
+header .container{
+    position: relative;
+    transition: .5s;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    position: relative;
+    transition: .5s;
+}
+nav .logo a{
+    font-size: 24px;
+    font-weight: 600;  
+    position: relative;
+    transition: .5s;
+}
+nav .logo a i{
+    color: var(--green);
+    margin-right: 5px;
+    position: relative;
+    transition: .5s;
+}
+nav a{
+    color: var(--black);
+    position: relative;
+    transition: .5s;
+}
+nav .nav-items a:hover{
+    color: var(--green);
+    position: relative;
+    transition: .5s;
+}
+nav .nav-items a,
+nav .nav-items .icons button{
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 18px;
+    position: relative;
+    transition: .5s;
+}
+
+nav .nav-items .icons button{
+    font-size: 26px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+#menu-btn {
+    font-size: 26px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+
+
+.open{
+    left: 0;
+}
+
+
+
+/* ==============      Old Nav Start      ================ */
+
+/* 
+nav .nav-items{
+    display: flex; 
+    position: relative;
+    transition: .5s;
+}
+ */
+
+
+/* ==============      Old Nav End      ================ */
+
+
+
+
+/* Recreate Nav: version - 1.1 */
+
+#menu-btn{
+    display: none;
+}
+
+.nav-items ul{
+    list-style: none;
+    display: flex;
+}
+.nav-items{
+    display: flex;
+}
+
+
+
+
+/* ===== HEADER SECTION END ===== */
+
+
+/* ===== Hero Section Start ===== */
+
+section#hero{
+    padding: 0rem 0;
+}
+#hero .bg-slider-wrapper .bg-slider{
+    background: url('../images/home-bg-1.jpg');
+    background-position: center top;
+    background-size: 100%;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 5rem;   
+}
+#hero .bg-slider-wrapper .bg-slider .right{
+    padding: 0 2rem;
+    padding-right: 9rem;
+}
+#hero .bg-slider-wrapper .bg-slider h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#hero .bg-slider-wrapper .bg-slider h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--green);
+}
+#hero .bg-slider-wrapper .bg-slider p{
+    font-weight: 300;
+    line-height: 2;
+    margin: 1rem 0;
+    text-align: justify;
+}
+#hero .bg-slider-wrapper .bg-slider a{
+    margin-top: 5px;
+}
+
+#hero .bg-slider-wrapper .bg-slider.middle{
+    background: url('../images/home-bg-2.jpg');
+    background-size: 100%;
+
+}
+
+#hero .bg-slider-wrapper .bg-slider .left{
+    padding: 0 2rem;
+    padding-left: 9rem;
+}
+#hero .bg-slider-wrapper .bg-slider.last{
+    background: url('../images/home-bg-3.jpg');
+    background-size: 100%;
+}
+#hero{
+    position: relative;
+}
+.slider-btn{
+    font-size: 35px;
+    background: none;
+    cursor: pointer;
+}
+.next-btn{
+    position: absolute;
+    right: 45px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.prev-btn{
+    position: absolute;
+    left: 45px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ===== Hero Section End ===== */
+
+
+
+
+/* ===== Adventure Section Start ===== */
+
+section.idea .idea-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.idea .idea-wrapper .idea-card img{
+    max-width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+section.idea .idea-wrapper .idea-card{
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+section.idea .idea-wrapper .idea-card h2{
+    font-size: 22px;
+    color: var(--green);
+    margin: 10px 0;
+}
+section.idea .idea-wrapper .idea-card p{
+    padding:0 .8rem;
+}
+section.idea .idea-wrapper .idea-card a{
+    margin-top: 15px ;
+}
+
+
+
+/* ===== Adventure Section End ===== */
+
+
+/* ===== About Section Start ===== */
+
+section.about{
+    padding-bottom: 10rem;
+}
+section.about .about-wrapper{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    
+}
+section.about .about-wrapper img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 40px 40px #D6D6D6;
+}
+section.about .about-wrapper h1{
+    font-size: 2rem;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+section.about .about-wrapper p{
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 15px;
+
+}
+section.about .about-wrapper .image-box{
+    width: 90%;
+}
+/* ===== About Section End ===== */
+
+
+
+
+
+
+
+/* ===== Products Section Start ===== */
+
+section.products .products-wrapper .product{
+    border: 2px solid var(--black) ;
+    margin: .7rem;
+}
+section.products .product-slider{
+    position: relative;
+}
+section.products .products-wrapper .product .img img{
+    max-width: 100%;
+}
+section.products .products-wrapper .product .text-box{
+    text-align: center;
+    background: var(--white);
+    position: relative;
+    z-index: 5;
+}
+section.products .products-wrapper .product .text-box h3,
+section.products .products-wrapper .product .text-box div{
+    padding: 3px 0;
+}
+section.products .products-wrapper .product .text-box .price{
+    font-size: 20px;
+    color: var(--green);
+}
+section.products .products-wrapper .product .text-box .star{
+    padding-bottom: 10px;
+}
+section.products .products-wrapper .product .product-menu{
+    text-align: center;
+}
+section.products .products-wrapper .product .product-menu a{
+    display: inline-block;
+    padding: 15px;
+    background: var(--text-black);
+    color: var(--white);
+}
+section.products .products-wrapper .product .product-menu a:hover{
+    background: var(--green);
+}
+
+section.products .products-wrapper .product .display{
+    position: relative;
+}
+section.products .products-wrapper .product .display .img{
+    position: relative;
+    z-index: -4;
+    padding-bottom: 1rem;
+}
+section.products .products-wrapper .product .display .product-menu{
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 4;
+}
+
+
+section.products .products-wrapper .product:hover .display .product-menu{
+    bottom: 0;
+} 
+
+
+
+
+.slider-btn-2{
+    font-size: 35px;
+    background: none;
+    cursor: pointer;
+}
+.next-btn-2{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.prev-btn-2{
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/* ===== Products Section End ===== */
+
+
+
+
+
+
+
+/* ===== Packages Section Start ===== */
+
+section.packages .packages-wrapper,
+section.offer .offer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-gap: 1rem;
+}
+section.packages .packages-wrapper .img img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+section.packages .packages-wrapper .package-card,
+section.offer .offer-wrapper .offer-card{
+    border: 2px solid var(--black);
+    padding: 1.3rem;
+    border-radius: 6px;
+}
+section.packages .packages-wrapper .text-box,
+section.offer .offer-wrapper .text-box{
+    text-align: center;
+    line-height: 2;
+}
+section.packages .packages-wrapper .text-box span{
+    display: block;
+    color: var(--green);
+    font-size: 22px;
+}
+section.packages .packages-wrapper .text-box h3,
+section.offer .offer-wrapper .text-box h3{
+    font-size: 20px;
+    color: var(--text-black);
+    margin: 5px 0;
+}
+section.packages .packages-wrapper .text-box p,
+section.offer .offer-wrapper .text-box p{
+    font-size: 14px;
+    
+}
+section.packages .packages-wrapper .package-card:hover,
+section.offer .offer-wrapper .offer-card:hover{
+    background: var(--black);
+    
+}
+section.packages .packages-wrapper .package-card:hover .text-box h3, 
+section.packages .packages-wrapper .package-card:hover .text-box p,
+section.offer .offer-wrapper .offer-card:hover .text-box h3, 
+section.offer .offer-wrapper .offer-card:hover .text-box p{
+    color: var(--white)
+}
+section.packages .packages-wrapper .package-card:hover .text-box a,
+section.offer .offer-wrapper .offer-card:hover .text-box a{
+    color: var(--white);
+    border-color: var(--white);
+}
+section.packages .packages-wrapper .package-card:hover .text-box a:hover,
+section.offer .offer-wrapper .offer-card:hover .text-box a:hover{
+    color: var(--black);
+    background: var(--white);
+}
+section.packages .packages-wrapper .text-box a,
+section.offer .offer-wrapper .text-box a{
+    line-height: 1.6;
+}
+/* ===== Packages Section End ===== */
+
+
+
+/* ===== Review Section Start ===== */
+
+section.review .review-card{
+    padding: 1rem;
+    background: #dfe6e9;
+    width: 33%;
+    line-height: 2;
+    margin: 1rem;
+}
+section.review .review-card p{
+    font-style: italic;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+section.review .review-card .review-info{
+    display: flex;
+    align-items: center;
+}
+section.review .review-card .review-info .img{
+    width: 70px;
+    margin-right: 20px;
+}
+section.review .review-card .review-info .img img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+section.review .review-card .review-info .text span{
+    color: var(--green);
+}
+section.review .review-card .review-info .text h3{
+    line-height: 1;
+}
+
+
+
+/* ===== Review Section End ===== */
+
+
+
+
+
+
+
+
+
+
+/* ===== Offer Section Start ===== */
+
+
+
+section.offer .offer-wrapper .text-box a{
+    margin-top: 20px;
+}
+section.offer .offer-wrapper .text-box h3{
+    color: var(--green);
+}
+section.offer .offer-wrapper .img {
+    text-align: center;
+}
+section.offer .offer-wrapper .img img{
+    width: 6rem;
+}
+section.offer .offer-wrapper .offer-card:hover .img img{
+    filter: invert(1);
+}
+section.offer .offer-wrapper .offer-card:hover .text-box h3{
+    color: var(--green);
+}
+
+
+/* ===== Offer Section End ===== */
+
+
+
+/* ===== Blog Section Start ===== */
+
+
+section.blog .post-wrapper .post{
+    padding: 1.5rem;
+    cursor: grab;
+}
+section.blog .post-wrapper .post:focus{
+    cursor: grabbing;
+}
+section.blog .post-wrapper .post .img img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+section.blog .post-wrapper .post .text-box .date{
+    background: var(--text-black);
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+section.blog .post-wrapper .post .text-box{
+    text-align: center;
+    margin-top: -20px;
+}
+section.blog .post-wrapper .post .text-box .date a{
+    color: var(--white);
+    margin: 0 7px;
+    font-size: 14px;
+}
+section.blog .post-wrapper .post .text-box .date a:hover{
+    color: var(--green);
+}
+section.blog .post-wrapper .post .text-box .date a i{
+    color: var(--green);
+    padding: 0 7px;
+}
+section.blog .post-wrapper .post .text-box h3{
+    font-size: 20px;
+    color: var(--text-black);
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+section.blog .post-wrapper .post .text-box p{
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+
+/* ===== Blog Section End ===== */
+
+
+
+
+
+/* ===== Cta Section Start ===== */
+
+section.cta .container{
+    max-width: 768px;
+    
+}
+section.cta h1{
+    margin-bottom: 20px;
+}
+section.cta p{
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+section.cta .input{
+    border: 2px solid var(--text-black);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+section.cta .input input{
+    padding: .8rem;
+    font-size: 16px;
+    text-transform: lowercase;
+    width: 80%;
+    border-radius: 50px;
+    background: none;
+}
+section.cta .input button{
+    padding: .8rem 2.5rem;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--text-black);
+    color: var(--white);
+    border: 2px solid var(--text-black);
+    border-radius: 50px;
+}
+section.cta .input button:hover{
+    background: var(--white);
+    color: var(--text-black)
+}
+/* ===== Cta Section End ===== */
+
+
+
+/* ===== Brands Section Start ===== */
+
+section.brands .brands-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+section.brands .brands-wrapper .brand{
+    text-align: center;
+}
+section.brands .brands-wrapper .brand img{
+    max-width: 80%;
+}
+
+/* ===== Brands Section End ===== */
+
+
+
+
+
+/* ===== Footer Section Start ===== */
+
+footer{
+    padding: 5rem 0;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+footer .footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer .footer-wrapper .footer-item h3{
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+footer .footer-wrapper .footer-item ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+footer .footer-wrapper .footer-item ul li a{
+    color: var(--white);
+    font-size: 14px;
+    margin-left: 5px;
+}
+footer .footer-wrapper .footer-item ul li a:hover{
+    color: var(--green);
+}
+footer .footer-wrapper .footer-item ul.info li i{
+    color: var(--green);
+}
+footer .footer-wrapper .footer-item ul.info li a:hover{
+    margin-left: 15px;
+}
+footer .copyright{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+footer .copyright span{
+    color: var(--green);
+}
+/* ===== Footer Section End ===== */
+
+
